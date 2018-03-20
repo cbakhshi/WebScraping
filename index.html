@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Surfing</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div clas="container">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+
+    </div>
+    </div>
+    <div class="row" id="mars-news">
+      <div class="col-md-12">
+        <div class="media">
+          <div class="media-body">
+            <h2>Latest Mars News</h2>
+            <h4 class="media-heading">Mars NEWS!</h4>
+    <div class="row" id="mars-featured-image">
+    
+
+      <div class="col-md-8">
+        <h2>Featured Mars Image</h2>
+        <img src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg" class="img-responsive"
+          alt="Responsive image">
+      </div>
+      <style>
+  #weather {
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    border: 5px solid lightgray;
+  }
+</style>
+<style>
+  #hemi_title {
+    text-align: center;
+    border: 2px;
+    background-color: gold;
+  }
+</style>
+<style>
+  #hemi_caption{
+    text-align: center;
+    
+  }
+</style>
+      <div class="row" id="facts">
+      <div class="col-md-4" id="weather">
+        <h4>Current Weather on Mars</h4>
+        <p> <link>https://twitter.com/marswxreport?lang=en</link> </p>
+      <div class="col-md-4" id="table">
+        <br>
+        <br>
+        <h4>Mars Facts</h4>
+        {{mars.mars_table | safe}}  
+    </div>
+  </div>
+</div>
+      <div class="row" id="hemispheres">
+      <div class="col-md-12" >
+        <h2 id=hemi_title> Mars Hemispheres</h2>
+        <br>
+        <br>
+      </div>
+      <div class="col-md-6" id="table">
+        <img src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg" class="img-responsive"
+         alt="Responsive image">
+         <h2 id="hemi_caption"> Cerberus Hemisphere Enhanced</h2>
+
+      </div>
+      <div class="col-md-6" id="table">
+        <img src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg" class="img-responsive"
+         alt="Responsive image">
+         <h2 id="hemi_caption"> Schiaparelli Hemisphere Enhanced</h2>
+         <br>
+
+      </div>
+      <div class="col-md-6" id="table">
+        <img src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg" class="img-responsive"
+         alt="Responsive image">
+         <h2 id="hemi_caption"> Syrtis Major Hemisphere Enhanced</h2>
+         <br>
+
+      </div>
+      <div class="col-md-6" id="table">
+        <img src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg" class="img-responsive"
+         alt="Responsive image">
+         <h2 id="hemi_caption"> Valles Marineris Hemisphere</h2>
+         <br>
+
+      </div>
+  </div>
+    </div>
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
